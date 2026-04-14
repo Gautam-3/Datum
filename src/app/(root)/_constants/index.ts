@@ -18,7 +18,7 @@ export const LANGUAGE_CONFIG: LanguageConfig = {
     id: "javascript",
     label: "JavaScript",
     logoPath: "/javascript.png",
-    pistonRuntime: { language: "javascript", version: "18.15.0" }, // api that we're gonna be using
+    pistonRuntime: { language: "javascript", version: "20.11.1" }, // api that we're gonna be using
     monacoLanguage: "javascript",
     defaultCode: `// JavaScript Playground
 const numbers = [1, 2, 3, 4, 5];
@@ -77,7 +77,7 @@ console.log('Sum of numbers:', math.sum());`,
     id: "python",
     label: "Python",
     logoPath: "/python.png",
-    pistonRuntime: { language: "python", version: "3.10.0" },
+    pistonRuntime: { language: "python", version: "3.12.0" },
     monacoLanguage: "python",
     defaultCode: `# Python Playground
 numbers = [1, 2, 3, 4, 5]
@@ -215,7 +215,7 @@ func main() {
     id: "cpp",
     label: "C++",
     logoPath: "/cpp.png",
-    pistonRuntime: { language: "cpp", version: "10.2.0" },
+    pistonRuntime: { language: "c++", version: "10.2.0" },
     monacoLanguage: "cpp",
     defaultCode: `#include <iostream>
 #include <vector>

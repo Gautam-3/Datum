@@ -84,11 +84,9 @@ export const useCodeEditorStore = create<CodeEditorState>((set, get) => {
 
       try {
         const runtime = LANGUAGE_CONFIG[language].pistonRuntime;
-        const response = await fetch("https://emkc.org/api/v2/piston/execute", {
+        const response = await fetch("/api/execute", {
           method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
+          headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
             language: runtime.language,
             version: runtime.version,
